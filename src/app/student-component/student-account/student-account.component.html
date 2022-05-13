@@ -1,0 +1,78 @@
+<body>
+    <div class="background">
+        
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <!-- we will add logo later-->
+                <a class="navbar-brand" href="#"> 
+                 <img src="/assets/images/EExams-removebg-preview.png" width="80" height="60"></a>
+                <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" (click)="toggleNav()" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- will change from database-->
+                 <span> Sabreen  </span>
+                </button>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" [class.show]="isOpen">
+                  <a class="dropdown-item" routerLink="/studentHome">Home</a>
+                  <a class="dropdown-item" routerLink="/logout">Log Out</a>
+                </div>
+             </div>
+            </div>
+        </nav>
+
+        <div class="space"></div>
+
+        <div class="container" id="con2">
+            <div class="row">
+                <div class="col col-4" id="subjects">
+                    <img  class="rotate" src="../../../assets/images/download.png" width="200px" height="110px">
+                    <h3> <span ><fa-icon [icon]="faBookMedical"></fa-icon></span> YOUR SUBJECTS</h3>
+
+                     <div class="sidebar">
+                        <a routerLink="/subjectDetails"> <span><fa-icon [icon]="faLocationArrow"></fa-icon></span> Modeling and Simulation</a>
+                        <a routerLink="/subjectDetails"><span><fa-icon [icon]="faLocationArrow"></fa-icon></span> Software Construction</a>
+                        <a routerLink="/subjectDetails"><span><fa-icon [icon]="faLocationArrow"></fa-icon></span> Computer Networks</a>
+                        <a routerLink="/subjectDetails"><span><fa-icon [icon]="faLocationArrow"></fa-icon></span> Opreating System</a>
+                        <a routerLink="/subjectDetails"><span><fa-icon [icon]="faLocationArrow"></fa-icon></span> Reuirements Analysis</a>
+                      </div>
+
+                </div>
+
+                <div class="col col-8" id="dash">
+                    <h2>Sabreen Hassan</h2>
+                    <h4><span><fa-icon [icon]="faGraduationCap"></fa-icon></span> Student</h4>
+
+                    <mat-tab-group animationDuration="0ms">
+                        <mat-tab label="Information">
+                            <h2>Student ID : <span class="info">5677</span></h2>
+                            <h2>Email:       <span class="info" >sabreen@gmail.com</span></h2>
+                            <h2>Level:       <span class="info">third</span></h2>
+                            <h2>Department:  <span class="info">SE</span></h2>
+
+                            
+                            </mat-tab>
+
+
+
+                        <mat-tab label="Results">
+                            <h2>Exam Name <span ><button mat-button color="primary">Total: 20/30</button></span></h2>
+                            
+
+                           
+                        </mat-tab>
+                      </mat-tab-group>
+                    
+
+                   
+                   
+
+
+                </div>
+
+
+           </div>
+
+        </div>
+
+
+    </div>
+</body>
